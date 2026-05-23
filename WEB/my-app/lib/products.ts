@@ -278,7 +278,7 @@ export function groupProducts(products: ProductRecord[]): GroupedProduct[] {
       categoryMap.set(category, new Map());
     }
 
-    const subcategoryMap = categoryMap.get(category);
+    const subcategoryMap = categoryMap.get(category)!;
 
     if (!subcategoryMap.has(subcategory)) {
       subcategoryMap.set(subcategory, []);

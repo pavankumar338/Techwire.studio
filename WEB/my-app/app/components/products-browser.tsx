@@ -61,7 +61,7 @@ function buildSearchQueryString(searchTerm: string) {
   return params.toString();
 }
 
-function formatCellValue(value: unknown) {
+function formatCellValue(value: unknown): string {
   if (value === null || value === undefined || value === "") {
     return "-";
   }
